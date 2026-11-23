@@ -1,0 +1,909 @@
+{
+ "range_GLBX": {
+  "ok": true,
+  "result": {
+   "start": "2010-06-06T00:00:00.000000000Z",
+   "end": "2026-11-23T02:30:48.211113000Z",
+   "schema": {
+    "mbo": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "mbp-1": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "mbp-10": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "tbbo": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "trades": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "bbo-1s": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "bbo-1m": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "ohlcv-1s": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "ohlcv-1m": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "ohlcv-1h": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "ohlcv-1d": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T00:00:00.000000000Z"
+    },
+    "definition": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "statistics": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "status": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "cmbp-1": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "cbbo-1s": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    },
+    "cbbo-1m": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:48.211113000Z"
+    }
+   }
+  }
+ },
+ "range_XNAS": {
+  "ok": true,
+  "result": {
+   "start": "2018-05-01T00:00:00.000000000Z",
+   "end": "2026-11-23T05:00:00.000000000Z",
+   "schema": {
+    "mbo": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "mbp-1": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "mbp-10": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "bbo-1s": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "bbo-1m": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "tbbo": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "trades": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "ohlcv-1s": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "ohlcv-1m": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "ohlcv-1h": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "ohlcv-1d": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "definition": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "statistics": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "status": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    },
+    "imbalance": {
+     "start": "2018-05-01T00:00:00.000000000Z",
+     "end": "2026-11-23T05:00:00.000000000Z"
+    }
+   }
+  }
+ },
+ "dataset_lowercase": {
+  "ok": true,
+  "result": {
+   "start": "2010-06-06T00:00:00.000000000Z",
+   "end": "2026-11-23T02:30:50.470620000Z",
+   "schema": {
+    "mbo": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "mbp-1": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "mbp-10": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "tbbo": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "trades": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "bbo-1s": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "bbo-1m": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "ohlcv-1s": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "ohlcv-1m": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "ohlcv-1h": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "ohlcv-1d": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T00:00:00.000000000Z"
+    },
+    "definition": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "statistics": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "status": {
+     "start": "2010-06-06T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "cmbp-1": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "cbbo-1s": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    },
+    "cbbo-1m": {
+     "start": "2017-05-21T00:00:00.000000000Z",
+     "end": "2026-11-23T02:30:50.470620000Z"
+    }
+   }
+  }
+ },
+ "dataset_typo": {
+  "ok": false,
+  "type": "BentoClientError",
+  "msg": "400 validation_failed\nInvalid `dataset`, was 'GLBX.MDP'. Use any of ['GLBX.MDP3', 'XNAS.ITCH', 'XBOS.ITCH', 'XPSX.ITCH', 'BATS.PITCH', 'BATY.PITCH', 'EDGA.PITCH', 'EDGX.PITCH', 'XNYS.PILLAR', 'XCIS.PILLAR', 'XASE.PILLAR', 'XCHI.PILLAR', 'XCIS.BBO', 'XCIS.TRADES', 'MEMX.MEMOIR', 'EPRL.DOM', 'FINN.NLS', 'FINY.TRADES', 'OPRA.PILLAR', 'DBEQ.BASIC', 'ARCX.PILLAR', 'IEXG.TOPS', 'EQUS.PLUS', 'XNYS.BBO', 'XNYS.TRADES', 'XNAS.QBBO', 'XNAS.NLS', 'IFEU.IMPACT', 'NDEX.IMPACT', 'EQUS.ALL', 'XNAS.BASIC', 'EQUS.SUMMARY', 'XCIS.TRADESBBO', 'XNYS.TRADESBBO', 'EQUS.MINI', 'IFUS.IMPACT', 'IFLL.IMPACT', 'XEUR.EOBI', 'XEEE.EOBI', 'XCBF.PITCH', 'OCEA.MEMOIR', 'MAIN.CGIF', 'EQUS.SIP', 'MSCI.CGIF', 'FTSE.CGIF', 'INAV.CGIF', 'MSTAR.CGIF', 'CCCY.CGIF', 'CGI.CGIF', 'XTKS.FLEX', 'XTKT.ITCH', 'XOSE.ITCH', 'DBIX.CORE', 'XHKG.OMDC', 'XHKF.OMDD'].\ndocumentation: https://databento.com/docs"
+ },
+ "schemas_DBEQ": {
+  "ok": true,
+  "result": [
+   "mbo",
+   "mbp-1",
+   "mbp-10",
+   "tbbo",
+   "trades",
+   "ohlcv-1s",
+   "ohlcv-1m",
+   "ohlcv-1h",
+   "ohlcv-1d",
+   "definition",
+   "status"
+  ]
+ },
+ "schemas_GLBX": {
+  "ok": true,
+  "result": [
+   "mbo",
+   "mbp-1",
+   "mbp-10",
+   "tbbo",
+   "trades",
+   "bbo-1s",
+   "bbo-1m",
+   "ohlcv-1s",
+   "ohlcv-1m",
+   "ohlcv-1h",
+   "ohlcv-1d",
+   "definition",
+   "statistics",
+   "status",
+   "cmbp-1",
+   "cbbo-1s",
+   "cbbo-1m"
+  ]
+ },
+ "cond_XNAS": {
+  "ok": true,
+  "result": [
+   {
+    "date": "2026-11-02",
+    "condition": "available",
+    "last_modified_date": "2026-11-03"
+   },
+   {
+    "date": "2026-11-03",
+    "condition": "available",
+    "last_modified_date": "2026-11-04"
+   },
+   {
+    "date": "2026-11-04",
+    "condition": "available",
+    "last_modified_date": "2026-11-05"
+   },
+   {
+    "date": "2026-11-05",
+    "condition": "available",
+    "last_modified_date": "2026-11-06"
+   },
+   {
+    "date": "2026-11-06",
+    "condition": "available",
+    "last_modified_date": "2026-11-07"
+   },
+   {
+    "date": "2026-11-07",
+    "condition": "available",
+    "last_modified_date": "2026-11-08"
+   },
+   {
+    "date": "2026-11-09",
+    "condition": "available",
+    "last_modified_date": "2026-11-10"
+   },
+   {
+    "date": "2026-11-10",
+    "condition": "available",
+    "last_modified_date": "2026-11-11"
+   },
+   {
+    "date": "2026-11-11",
+    "condition": "available",
+    "last_modified_date": "2026-11-12"
+   },
+   {
+    "date": "2026-11-12",
+    "condition": "available",
+    "last_modified_date": "2026-11-13"
+   },
+   {
+    "date": "2026-11-13",
+    "condition": "available",
+    "last_modified_date": "2026-11-14"
+   },
+   {
+    "date": "2026-11-14",
+    "condition": "available",
+    "last_modified_date": "2026-11-15"
+   },
+   {
+    "date": "2026-11-16",
+    "condition": "available",
+    "last_modified_date": "2026-11-17"
+   },
+   {
+    "date": "2026-11-17",
+    "condition": "available",
+    "last_modified_date": "2026-11-18"
+   },
+   {
+    "date": "2026-11-18",
+    "condition": "available",
+    "last_modified_date": "2026-11-19"
+   },
+   {
+    "date": "2026-11-19",
+    "condition": "available",
+    "last_modified_date": "2026-11-20"
+   },
+   {
+    "date": "2026-11-20",
+    "condition": "available",
+    "last_modified_date": "2026-11-21"
+   },
+   {
+    "date": "2026-11-21",
+    "condition": "available",
+    "last_modified_date": "2026-11-22"
+   },
+   {
+    "date": "2026-11-23",
+    "condition": "available",
+    "last_modified_date": "2026-11-23"
+   }
+  ]
+ },
+ "cost_ES_raw_mbo_day": {
+  "ok": true,
+  "result": 2.371292361617
+ },
+ "cost_ALL_mbo_day": {
+  "ok": true,
+  "result": 2232.876451747119
+ },
+ "cost_ES_ohlcv1m_month": {
+  "ok": true,
+  "result": 0.110399723053
+ },
+ "cost_AAPL_trades_day": {
+  "ok": true,
+  "result": 0.040610790253
+ },
+ "size_AAPL_trades_day": {
+  "ok": true,
+  "result": 7267584
+ },
+ "cost_schema_unsupported": {
+  "ok": true,
+  "result": 0.105223953724
+ },
+ "cost_future_end": {
+  "ok": false,
+  "type": "BentoClientError",
+  "msg": "422 data_end_after_available_end\nThe dataset XNAS.ITCH has data available up to '2026-11-23 10:30:00+00:00'. The `end` in the query ('2026-12-30 00:00:00+00:00') is after the available range. Try requesting with an earlier `end`.\ndocumentation: https://databento.com/docs/api-reference-historical/basics/datasets"
+ },
+ "cost_before_start": {
+  "ok": false,
+  "type": "BentoClientError",
+  "msg": "422 data_start_before_available_start\n`start` in query ('2000-01-03 00:00:00+00:00') was before the available start of dataset XNAS.ITCH ('2018-05-01 00:00:00+00:00'). Try requesting with a later `start`.\ndocumentation: https://databento.com/docs/api-reference-historical/basics/datasets"
+ },
+ "cost_start_after_end": {
+  "ok": false,
+  "type": "BentoClientError",
+  "msg": "422 data_time_range_start_on_or_after_end\nInvalid time range query, `start` 2026-11-18 00:00:00+00:00 cannot be on or after `end` 2026-11-17 00:00:00+00:00.\ndocumentation: https://databento.com/docs/standards-and-conventions/common-fields-enums-types"
+ },
+ "cost_ES_rawsym_parentstyle": {
+  "ok": false,
+  "type": "BentoClientError",
+  "msg": "422 symbology_invalid_request\nNone of the symbols could be resolved\ndocumentation: https://databento.com/docs/api-reference-historical/basics/symbology"
+ },
+ "sym_ES_raw": {
+  "ok": false,
+  "type": "BentoServerError",
+  "msg": "504 The remote gateway timed out."
+ },
+ "sym_ES_parent": {
+  "ok": true,
+  "result": {
+   "result": {
+    "ESH8-ESM8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42042937"
+     }
+    ],
+    "ESH7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42140860"
+     }
+    ],
+    "ESM7-ESH8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42058427"
+     }
+    ],
+    "ESZ6-ESM7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42006493"
+     }
+    ],
+    "ESZ8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42033138"
+     }
+    ],
+    "ESM8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42140863"
+     }
+    ],
+    "ESH7-ESM7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42018261"
+     }
+    ],
+    "ESU1": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42043646"
+     }
+    ],
+    "ESU8-ESZ8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42059899"
+     }
+    ],
+    "ESZ6": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "10252"
+     }
+    ],
+    "ESU7-ESZ7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42009476"
+     }
+    ],
+    "ESM8-ESU8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42058568"
+     }
+    ],
+    "ESM7-ESZ7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42036454"
+     }
+    ],
+    "ESH8-ESU8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42036972"
+     }
+    ],
+    "ESM7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42140856"
+     }
+    ],
+    "ESZ1": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42031296"
+     }
+    ],
+    "ESH7-ESU7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42007293"
+     }
+    ],
+    "ESH1": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42004833"
+     }
+    ],
+    "ESZ7-ESH8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42036482"
+     }
+    ],
+    "ESZ6-ESH7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42008507"
+     }
+    ],
+    "ESM0": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42004092"
+     }
+    ],
+    "ESH8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42140879"
+     }
+    ],
+    "ESM7-ESU7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42016712"
+     }
+    ],
+    "ESZ9": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42004134"
+     }
+    ],
+    "ESH7-ESZ7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42042935"
+     }
+    ],
+    "ESZ7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "17740"
+     }
+    ],
+    "ESU7-ESH8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42053378"
+     }
+    ],
+    "ESZ6-ESU7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42023506"
+     }
+    ],
+    "ESU7-ESM8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42048344"
+     }
+    ],
+    "ESU0": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42004613"
+     }
+    ],
+    "ESZ0": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42004653"
+     }
+    ],
+    "ESU9": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42000977"
+     }
+    ],
+    "ESH0": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42000746"
+     }
+    ],
+    "ESH9": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42002687"
+     }
+    ],
+    "ESZ6-ESZ7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42056111"
+     }
+    ],
+    "ESU8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42140861"
+     }
+    ],
+    "ESZ7-ESM8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42073994"
+     }
+    ],
+    "ESH7-ESH8": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42048343"
+     }
+    ],
+    "ESM1": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42018369"
+     }
+    ],
+    "ESU7": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42140874"
+     }
+    ],
+    "ESM9": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "42005050"
+     }
+    ]
+   },
+   "symbols": [
+    "ES.FUT"
+   ],
+   "stype_in": "parent",
+   "stype_out": "instrument_id",
+   "start_date": "2026-11-17",
+   "end_date": "2026-11-18",
+   "partial": [],
+   "not_found": [],
+   "message": "OK",
+   "status": 0
+  }
+ },
+ "sym_ES_c0": {
+  "ok": true,
+  "result": {
+   "result": {
+    "ES.c.0": [
+     {
+      "d0": "2026-09-10",
+      "d1": "2026-09-20",
+      "s": "42140870"
+     },
+     {
+      "d0": "2026-09-20",
+      "d1": "2026-09-25",
+      "s": "10252"
+     }
+    ],
+    "ES.v.0": [
+     {
+      "d0": "2026-09-10",
+      "d1": "2026-09-16",
+      "s": "42140870"
+     },
+     {
+      "d0": "2026-09-16",
+      "d1": "2026-09-25",
+      "s": "10252"
+     }
+    ],
+    "ES.n.0": [
+     {
+      "d0": "2026-09-10",
+      "d1": "2026-09-16",
+      "s": "42140870"
+     },
+     {
+      "d0": "2026-09-16",
+      "d1": "2026-09-25",
+      "s": "10252"
+     }
+    ]
+   },
+   "symbols": [
+    "ES.c.0",
+    "ES.v.0",
+    "ES.n.0"
+   ],
+   "stype_in": "continuous",
+   "stype_out": "instrument_id",
+   "start_date": "2026-09-10",
+   "end_date": "2026-09-25",
+   "partial": [],
+   "not_found": [],
+   "message": "OK",
+   "status": 0
+  }
+ },
+ "sym_BRK": {
+  "ok": true,
+  "result": {
+   "result": {
+    "BRK.B": [
+     {
+      "d0": "2026-11-17",
+      "d1": "2026-11-18",
+      "s": "2306"
+     }
+    ],
+    "BRK B": [],
+    "BRK/B": [],
+    "BRKB": []
+   },
+   "symbols": [
+    "BRK.B",
+    "BRK B",
+    "BRK/B",
+    "BRKB"
+   ],
+   "stype_in": "raw_symbol",
+   "stype_out": "instrument_id",
+   "start_date": "2026-11-17",
+   "end_date": "2026-11-18",
+   "partial": [],
+   "not_found": [
+    "BRK B",
+    "BRK/B",
+    "BRKB"
+   ],
+   "message": "Not found",
+   "status": 2
+  }
+ },
+ "sym_weekend": {
+  "ok": true,
+  "result": {
+   "result": {
+    "AAPL": [
+     {
+      "d0": "2026-11-20",
+      "d1": "2026-11-22",
+      "s": "38"
+     }
+    ]
+   },
+   "symbols": [
+    "AAPL"
+   ],
+   "stype_in": "raw_symbol",
+   "stype_out": "instrument_id",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-23",
+   "partial": [],
+   "not_found": [],
+   "message": "OK",
+   "status": 0
+  }
+ },
+ "unit_prices_GLBX": {
+  "ok": true,
+  "result": [
+   {
+    "mode": "historical",
+    "unit_prices": {
+     "mbo": 1.8,
+     "mbp-1": 1.8,
+     "mbp-10": 0.5,
+     "tbbo": 28.0,
+     "trades": 28.0,
+     "bbo-1s": 18.0,
+     "bbo-1m": 18.0,
+     "ohlcv-1s": 70.0,
+     "ohlcv-1m": 70.0,
+     "ohlcv-1h": 190.0,
+     "ohlcv-1d": 190.0,
+     "definition": 1.7,
+     "statistics": 1.0,
+     "status": 4.0,
+     "cmbp-1": 1.8,
+     "cbbo-1s": 18.0,
+     "cbbo-1m": 18.0
+    }
+   },
+   {
+    "mode": "historical-streaming",
+    "unit_prices": {
+     "mbo": 1.8,
+     "mbp-1": 1.8,
+     "mbp-10": 0.5,
+     "tbbo": 28.0,
+     "trades": 28.0,
+     "bbo-1s": 18.0,
+     "bbo-1m": 18.0,
+     "ohlcv-1s": 70.0,
+     "ohlcv-1m": 70.0,
+     "ohlcv-1h": 190.0,
+     "ohlcv-1d": 190.0,
+     "definition": 1.7,
+     "statistics": 1.0,
+     "status": 4.0,
+     "cmbp-1": 1.8,
+     "cbbo-1s": 18.0,
+     "cbbo-1m": 18.0
+    }
+   },
+   {
+    "mode": "live",
+    "unit_prices": {
+     "mbo": 2.16,
+     "mbp-1": 2.16,
+     "mbp-10": 0.6,
+     "tbbo": 33.6,
+     "trades": 33.6,
+     "bbo-1s": 21.6,
+     "bbo-1m": 21.6,
+     "ohlcv-1s": 84.0,
+     "ohlcv-1m": 84.0,
+     "ohlcv-1h": 228.0,
+     "ohlcv-1d": 228.0,
+     "definition": 2.04,
+     "statistics": 1.2,
+     "status": 4.0,
+     "cmbp-1": 2.16,
+     "cbbo-1s": 21.6,
+     "cbbo-1m": 21.6
+    }
+   }
+  ]
+ }
+}

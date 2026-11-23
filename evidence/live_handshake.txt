@@ -1,0 +1,104 @@
+10:37:46.447406 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35842: Flags [F.], seq 48168286, ack 3144602616, win 4096, options [nop,nop,TS val 1335325931 ecr 320014088], length 0
+10:37:46.447427 eth0  Out IP 172.17.0.12.35842 > 209.127.153.140.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 320014310 ecr 1335325931], length 0
+10:37:47.260493 eth0  Out IP 172.17.0.12.35858 > 209.127.153.140.13000: Flags [S], seq 1701792255, win 64240, options [mss 1460,sackOK,TS val 320015123 ecr 0,nop,wscale 7], length 0
+10:37:47.482462 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [S.], seq 855615728, ack 1701792256, win 65408, options [mss 65480,sackOK,TS val 1335326966 ecr 320015123,nop,wscale 7], length 0
+10:37:47.482475 eth0  Out IP 172.17.0.12.35858 > 209.127.153.140.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 320015345 ecr 1335326966], length 0
+10:37:47.704380 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [P.], seq 1:19, ack 1, win 4096, options [nop,nop,TS val 1335327188 ecr 320015345], length 18
+lsg_version=0.9.4
+10:37:47.704387 eth0  Out IP 172.17.0.12.35858 > 209.127.153.140.13000: Flags [.], ack 19, win 502, options [nop,nop,TS val 320015567 ecr 1335327188], length 0
+10:37:47.704402 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [P.], seq 19:57, ack 1, win 4096, options [nop,nop,TS val 1335327188 ecr 320015345], length 38
+cram=<challenge>
+10:37:47.704403 eth0  Out IP 172.17.0.12.35858 > 209.127.153.140.13000: Flags [.], ack 57, win 502, options [nop,nop,TS val 320015567 ecr 1335327188], length 0
+10:37:47.704544 eth0  Out IP 172.17.0.12.35858 > 209.127.153.140.13000: Flags [P.], seq 1:117, ack 57, win 502, options [nop,nop,TS val 320015567 ecr 1335327188], length 116
+auth=<sha256(cram|key)>-<bucket>|dataset=GLBX.MDP3|encoding=dbn|ts_out=0
+10:37:47.704601 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [.], ack 117, win 4095, options [nop,nop,TS val 1335327188 ecr 320015567], length 0
+10:37:47.999263 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [P.], seq 57:126, ack 117, win 4096, options [nop,nop,TS val 1335327483 ecr 320015567], length 69
+success=0|error=A live data license is required to access GLBX.MDP3.
+10:37:47.999287 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [F.], seq 126, ack 117, win 4096, options [nop,nop,TS val 1335327483 ecr 320015567], length 0
+10:37:48.000565 eth0  Out IP 172.17.0.12.35858 > 209.127.153.140.13000: Flags [F.], seq 117, ack 127, win 502, options [nop,nop,TS val 320015863 ecr 1335327483], length 0
+10:37:48.000716 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35858: Flags [.], ack 118, win 4095, options [nop,nop,TS val 1335327484 ecr 320015567], length 0
+10:37:48.041200 eth0  Out IP 172.17.0.12.35862 > 209.127.153.140.13000: Flags [S], seq 1137451305, win 64240, options [mss 1460,sackOK,TS val 320015904 ecr 0,nop,wscale 7], length 0
+10:37:48.263487 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [S.], seq 626996139, ack 1137451306, win 65408, options [mss 65480,sackOK,TS val 1335327747 ecr 320015904,nop,wscale 7], length 0
+10:37:48.263500 eth0  Out IP 172.17.0.12.35862 > 209.127.153.140.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 320016126 ecr 1335327747], length 0
+10:37:48.486218 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [P.], seq 1:19, ack 1, win 4096, options [nop,nop,TS val 1335327970 ecr 320016126], length 18
+lsg_version=0.9.4
+10:37:48.486229 eth0  Out IP 172.17.0.12.35862 > 209.127.153.140.13000: Flags [.], ack 19, win 502, options [nop,nop,TS val 320016349 ecr 1335327970], length 0
+10:37:48.486251 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [P.], seq 19:57, ack 1, win 4096, options [nop,nop,TS val 1335327970 ecr 320016126], length 38
+cram=<challenge>
+10:37:48.486254 eth0  Out IP 172.17.0.12.35862 > 209.127.153.140.13000: Flags [.], ack 57, win 502, options [nop,nop,TS val 320016349 ecr 1335327970], length 0
+10:37:48.486483 eth0  Out IP 172.17.0.12.35862 > 209.127.153.140.13000: Flags [P.], seq 1:117, ack 57, win 502, options [nop,nop,TS val 320016349 ecr 1335327970], length 116
+auth=<sha256(cram|key)>-<bucket>|dataset=GLBX.MDP3|encoding=dbn|ts_out=0
+10:37:48.486555 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [.], ack 117, win 4095, options [nop,nop,TS val 1335327970 ecr 320016349], length 0
+10:37:48.747833 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [P.], seq 57:96, ack 117, win 4096, options [nop,nop,TS val 1335328231 ecr 320016349], length 39
+success=0|error=Authentication failed.
+10:37:48.747940 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [F.], seq 96, ack 117, win 4096, options [nop,nop,TS val 1335328232 ecr 320016349], length 0
+10:37:48.749067 eth0  Out IP 172.17.0.12.35862 > 209.127.153.140.13000: Flags [F.], seq 117, ack 97, win 502, options [nop,nop,TS val 320016611 ecr 1335328231], length 0
+10:37:48.749193 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35862: Flags [.], ack 118, win 4095, options [nop,nop,TS val 1335328233 ecr 320016349], length 0
+10:37:48.784589 eth0  Out IP 172.17.0.12.35874 > 209.127.153.140.13000: Flags [S], seq 2793560697, win 64240, options [mss 1460,sackOK,TS val 320016647 ecr 0,nop,wscale 7], length 0
+10:37:49.010944 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [S.], seq 2146969081, ack 2793560698, win 65408, options [mss 65480,sackOK,TS val 1335328494 ecr 320016647,nop,wscale 7], length 0
+10:37:49.010955 eth0  Out IP 172.17.0.12.35874 > 209.127.153.140.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 320016873 ecr 1335328494], length 0
+10:37:49.236934 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [P.], seq 1:19, ack 1, win 4096, options [nop,nop,TS val 1335328720 ecr 320016873], length 18
+lsg_version=0.9.4
+10:37:49.236945 eth0  Out IP 172.17.0.12.35874 > 209.127.153.140.13000: Flags [.], ack 19, win 502, options [nop,nop,TS val 320017099 ecr 1335328720], length 0
+10:37:49.236968 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [P.], seq 19:57, ack 1, win 4096, options [nop,nop,TS val 1335328720 ecr 320016873], length 38
+cram=<challenge>
+10:37:49.236970 eth0  Out IP 172.17.0.12.35874 > 209.127.153.140.13000: Flags [.], ack 57, win 502, options [nop,nop,TS val 320017099 ecr 1335328720], length 0
+10:37:49.237097 eth0  Out IP 172.17.0.12.35874 > 209.127.153.140.13000: Flags [P.], seq 1:117, ack 57, win 502, options [nop,nop,TS val 320017099 ecr 1335328720], length 116
+auth=<sha256(cram|key)>-<bucket>|dataset=GLBX.MDP3|encoding=dbn|ts_out=0
+10:37:49.237167 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [.], ack 117, win 4095, options [nop,nop,TS val 1335328721 ecr 320017099], length 0
+10:37:49.463516 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [P.], seq 57:106, ack 117, win 4096, options [nop,nop,TS val 1335328947 ecr 320017099], length 49
+success=0|error=Illegal characters in field auth
+10:37:49.463539 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [F.], seq 106, ack 117, win 4096, options [nop,nop,TS val 1335328947 ecr 320017099], length 0
+10:37:49.464645 eth0  Out IP 172.17.0.12.35874 > 209.127.153.140.13000: Flags [F.], seq 117, ack 107, win 502, options [nop,nop,TS val 320017327 ecr 1335328947], length 0
+10:37:49.464784 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35874: Flags [.], ack 118, win 4095, options [nop,nop,TS val 1335328948 ecr 320017099], length 0
+10:37:49.496703 eth0  Out IP 172.17.0.12.35878 > 209.127.153.140.13000: Flags [S], seq 617018748, win 64240, options [mss 1460,sackOK,TS val 320017359 ecr 0,nop,wscale 7], length 0
+10:37:49.718097 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [S.], seq 1889965487, ack 617018749, win 65408, options [mss 65480,sackOK,TS val 1335329202 ecr 320017359,nop,wscale 7], length 0
+10:37:49.718114 eth0  Out IP 172.17.0.12.35878 > 209.127.153.140.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 320017580 ecr 1335329202], length 0
+10:37:49.940278 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [P.], seq 1:19, ack 1, win 4096, options [nop,nop,TS val 1335329424 ecr 320017580], length 18
+lsg_version=0.9.4
+10:37:49.940289 eth0  Out IP 172.17.0.12.35878 > 209.127.153.140.13000: Flags [.], ack 19, win 502, options [nop,nop,TS val 320017803 ecr 1335329424], length 0
+10:37:49.940311 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [P.], seq 19:57, ack 1, win 4096, options [nop,nop,TS val 1335329424 ecr 320017580], length 38
+cram=<challenge>
+10:37:49.940312 eth0  Out IP 172.17.0.12.35878 > 209.127.153.140.13000: Flags [.], ack 57, win 502, options [nop,nop,TS val 320017803 ecr 1335329424], length 0
+10:37:49.940436 eth0  Out IP 172.17.0.12.35878 > 209.127.153.140.13000: Flags [P.], seq 1:117, ack 57, win 502, options [nop,nop,TS val 320017803 ecr 1335329424], length 116
+auth=<sha256(cram|key)>-<bucket>|dataset=GLBX.MDP3|encoding=dbn|ts_out=0
+10:37:49.940636 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [.], ack 117, win 4095, options [nop,nop,TS val 1335329424 ecr 320017803], length 0
+10:37:50.236996 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [P.], seq 57:126, ack 117, win 4096, options [nop,nop,TS val 1335329720 ecr 320017803], length 69
+success=0|error=A live data license is required to access GLBX.MDP3.
+10:37:50.237014 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [F.], seq 126, ack 117, win 4096, options [nop,nop,TS val 1335329721 ecr 320017803], length 0
+10:37:50.237942 eth0  Out IP 172.17.0.12.35878 > 209.127.153.140.13000: Flags [F.], seq 117, ack 127, win 502, options [nop,nop,TS val 320018100 ecr 1335329720], length 0
+10:37:50.238197 eth0  In  IP 209.127.153.140.13000 > 172.17.0.12.35878: Flags [.], ack 118, win 4095, options [nop,nop,TS val 1335329722 ecr 320017803], length 0
+10:37:50.269908 eth0  Out IP 172.17.0.12.53828 > 209.127.154.228.13000: Flags [S], seq 3958158674, win 64240, options [mss 1460,sackOK,TS val 4050314119 ecr 0,nop,wscale 7], length 0
+10:37:50.490628 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [S.], seq 2864050785, ack 3958158675, win 65408, options [mss 65480,sackOK,TS val 1479818464 ecr 4050314119,nop,wscale 7], length 0
+10:37:50.490651 eth0  Out IP 172.17.0.12.53828 > 209.127.154.228.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 4050314340 ecr 1479818464], length 0
+10:37:50.710506 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [P.], seq 1:57, ack 1, win 4096, options [nop,nop,TS val 1479818684 ecr 4050314340], length 56
+lsg_version=0.9.4
+cram=<challenge>
+10:37:50.710529 eth0  Out IP 172.17.0.12.53828 > 209.127.154.228.13000: Flags [.], ack 57, win 502, options [nop,nop,TS val 4050314560 ecr 1479818684], length 0
+10:37:50.710905 eth0  Out IP 172.17.0.12.53828 > 209.127.154.228.13000: Flags [P.], seq 1:117, ack 57, win 502, options [nop,nop,TS val 4050314560 ecr 1479818684], length 116
+auth=<sha256(cram|key)>-<bucket>|dataset=XNAS.ITCH|encoding=dbn|ts_out=0
+10:37:50.711287 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [.], ack 117, win 4095, options [nop,nop,TS val 1479818685 ecr 4050314560], length 0
+10:37:50.973192 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [P.], seq 57:126, ack 117, win 4096, options [nop,nop,TS val 1479818947 ecr 4050314560], length 69
+success=0|error=A live data license is required to access XNAS.ITCH.
+10:37:50.973235 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [F.], seq 126, ack 117, win 4096, options [nop,nop,TS val 1479818947 ecr 4050314560], length 0
+10:37:50.975824 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [F.], seq 126, ack 117, win 4096, options [nop,nop,TS val 1479818949 ecr 4050314560], length 0
+10:37:50.975859 eth0  Out IP 172.17.0.12.53828 > 209.127.154.228.13000: Flags [.], ack 127, win 502, options [nop,nop,TS val 4050314825 ecr 1479818947,nop,nop,sack 1 {126:127}], length 0
+10:37:50.976988 eth0  Out IP 172.17.0.12.53828 > 209.127.154.228.13000: Flags [F.], seq 117, ack 127, win 502, options [nop,nop,TS val 4050314826 ecr 1479818947], length 0
+10:37:50.977459 eth0  In  IP 209.127.154.228.13000 > 172.17.0.12.53828: Flags [.], ack 118, win 4095, options [nop,nop,TS val 1479818951 ecr 4050314825], length 0
+10:37:51.048582 eth0  Out IP 172.17.0.12.38692 > 209.127.154.230.13000: Flags [S], seq 2988834383, win 64240, options [mss 1460,sackOK,TS val 4113148492 ecr 0,nop,wscale 7], length 0
+10:37:51.269671 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [S.], seq 822810545, ack 2988834384, win 65408, options [mss 65480,sackOK,TS val 2698391701 ecr 4113148492,nop,wscale 7], length 0
+10:37:51.269710 eth0  Out IP 172.17.0.12.38692 > 209.127.154.230.13000: Flags [.], ack 1, win 502, options [nop,nop,TS val 4113148713 ecr 2698391701], length 0
+10:37:51.489804 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [P.], seq 1:19, ack 1, win 4096, options [nop,nop,TS val 2698391921 ecr 4113148713], length 18
+lsg_version=0.9.4
+10:37:51.489853 eth0  Out IP 172.17.0.12.38692 > 209.127.154.230.13000: Flags [.], ack 19, win 502, options [nop,nop,TS val 4113148933 ecr 2698391921], length 0
+10:37:51.489916 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [P.], seq 19:57, ack 1, win 4096, options [nop,nop,TS val 2698391921 ecr 4113148713], length 38
+cram=<challenge>
+10:37:51.489921 eth0  Out IP 172.17.0.12.38692 > 209.127.154.230.13000: Flags [.], ack 57, win 502, options [nop,nop,TS val 4113148933 ecr 2698391921], length 0
+10:37:51.490441 eth0  Out IP 172.17.0.12.38692 > 209.127.154.230.13000: Flags [P.], seq 1:119, ack 57, win 502, options [nop,nop,TS val 4113148934 ecr 2698391921], length 118
+auth=<sha256(cram|key)>-<bucket>|dataset=OPRA.PILLAR|encoding=dbn|ts_out=0
+10:37:51.490895 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [.], ack 119, win 4095, options [nop,nop,TS val 2698391922 ecr 4113148934], length 0
+10:37:51.759203 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [P.], seq 57:128, ack 119, win 4096, options [nop,nop,TS val 2698392191 ecr 4113148934], length 71
+success=0|error=A live data license is required to access OPRA.PILLAR.
+10:37:51.759317 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [F.], seq 128, ack 119, win 4096, options [nop,nop,TS val 2698392191 ecr 4113148934], length 0
+10:37:51.760554 eth0  Out IP 172.17.0.12.38692 > 209.127.154.230.13000: Flags [F.], seq 119, ack 129, win 502, options [nop,nop,TS val 4113149204 ecr 2698392191], length 0
+10:37:51.760716 eth0  In  IP 209.127.154.230.13000 > 172.17.0.12.38692: Flags [.], ack 120, win 4095, options [nop,nop,TS val 2698392192 ecr 4113148934], length 0

@@ -1,0 +1,7 @@
+out/
+*.dbn
+*.dbn.zst
+*.pcap
+.venv/
+__pycache__/
+.pytest_cache/

@@ -1,0 +1,21 @@
+[PASS] api key: Well-formed key [sha256:a9208ff639]
+[PASS] historical auth: Key accepted; 31 datasets visible.
+[PASS] dataset: GLBX.MDP3/ohlcv-1d: 2010-06-06 .. last ingested 2026-11-23T00:00:00Z
+[INFO] timezone: Dates without a time are UTC midnight: start=2026-09-14 means 2026-09-14T00:00:00+00:00 = 2026-09-13 19:00 New York (EST). For CME (GLBX.MDP3) the trading day starts at 17:00 Chicago the evening before.
+       fix: Pass explicit times with an offset, e.g. 2026-11-17T09:30-05:00, or filter on the index after tz_convert.
+[PASS] symbology: All 2 symbol(s) resolve.
+[WARN] symbol overlap: Each record carries one instrument_id, so it can be labelled with only one of these symbols. instrument 42140870: ES.v.0 2026-09-14..2026-09-16 and ES.c.0 2026-09-14..2026-09-20; instrument 10252: ES.v.0 2026-09-16..2026-09-24 and ES.c.0 2026-09-20..2026-09-24. With databento-python 0.90.0 (>=0.68.1) to_df() can return symbol=NaN on dates covered by only one of them (InstrumentMap only checks the latest-starting interval).
+       fix: Request each continuous/parent symbol separately if you need every label. Or key on instrument_id and join symbology.resolve() output yourself.
+[PASS] cost: $0.0002 for 1,008.0 B billable (budget $1.00). Same request by schema: {'mbo': 12.7719, 'mbp-1': 11.4475, 'trades': 5.2468, 'ohlcv-1m': 0.0779, 'ohlcv-1d': 0.0002}
+[FAIL] live gateway: glbx-mdp3.lsg.databento.com rejected auth: 'A live data license is required to access GLBX.MDP3.' (lsg_version=0.9.4, connect 244 ms, auth 738 ms)
+       fix: Historical access does not include live. Add a live license for this dataset in the portal (Plans and live data), or use historical/intraday replay.
+
+### Escalation summary
+- Time (UTC): 2026-11-23 10:48:04
+- Client: python 3.12.16, databento 0.90.0, os Linux, databento-dbn 0.73.0
+- Key fingerprint: sha256:a9208ff639 (not the key)
+- Request: `{"dataset": "GLBX.MDP3", "schema": "ohlcv-1d", "symbols": "ES.c.0,ES.v.0", "stype_in": "continuous", "start": "2026-09-14", "end": "2026-09-24"}`
+- Findings:
+  - [WARN] symbol overlap: Each record carries one instrument_id, so it can be labelled with only one of these symbols. instrument 42140870: ES.v.0 2026-09-14..2026-09-16 and ES.c.0 2026-09-14..2026-09-20; instrument 10252: ES.v.0 2026-09-16..2026-09-24 and ES.c.0 2026-09-20..2026-09-24. With databento-python 0.90.0 (>=0.68.1) to_df() can return symbol=NaN on dates covered by only one of them (InstrumentMap only checks the latest-starting interval).
+  - [FAIL] live gateway: glbx-mdp3.lsg.databento.com rejected auth: 'A live data license is required to access GLBX.MDP3.' (lsg_version=0.9.4, connect 244 ms, auth 738 ms)
+- Reproduce: `python dbdoctor.py --dataset GLBX.MDP3 --symbols ES.c.0,ES.v.0 --stype-in continuous --schema ohlcv-1d --start 2026-09-14 --end 2026-09-24 --live`
