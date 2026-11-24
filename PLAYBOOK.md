@@ -1,6 +1,6 @@
 # Databento first-line support playbook
 
-Eighteen tickets a frontline engineer is likely to see in the first weeks, each reproduced against the real Databento API on 2026-11-23. I used `databento` 0.90.0 and `databento-dbn` 0.73.0 on Python 3.12, from Kuala Lumpur, on a new account with only historical access.
+Twenty tickets a frontline engineer is likely to see in the first weeks, each reproduced against the real Databento API on 2026-11-23. I used `databento` 0.90.0 and `databento-dbn` 0.73.0 on Python 3.12, from Kuala Lumpur, on a new account with only historical access.
 
 Every "Evidence" block is the response the API actually returned. Response summaries are in [`evidence/`](evidence/); the market data itself is not redistributed. The paid pulls behind them cost $0.04 in total. Each ticket ends with a reply I would send and whether it needs escalating.
 
@@ -26,6 +26,8 @@ Every "Evidence" block is the response the API actually returned. Response summa
 | 16 | Data | [Prices look 1,000,000,000x too big](#16-prices-look-1000000000x-too-big) |
 | 17 | Billing | [How much will this cost? / surprise bill](#17-how-much-will-this-cost--surprise-bill) |
 | 18 | Platform | [504 The remote gateway timed out](#18-504-the-remote-gateway-timed-out) |
+| 19 | Data | [Your daily bar doesn't match CME](#19-your-daily-bar-doesnt-match-cme) |
+| 20 | Data | [Settlement prices are one day off](#20-settlement-prices-are-one-day-off) |
 
 ---
 
@@ -87,7 +89,7 @@ $ timeout 3 nc glbx-mdp3.lsg.databento.com 13000
 lsg_version=0.9.4
 cram=<challenge>
 ```
-[`evidence/live_handshake.txt`](evidence/live_handshake.txt) is a `tcpdump -A` capture of six handshakes (auth hashes and bucket IDs redacted). The key never crosses the wire, only SHA-256(challenge + key).
+[`evidence/live_handshake.pcap`](evidence/live_handshake.pcap) is a `tcpdump` capture of six handshakes. Read it with `tcpdump -A -r`; the key is never on the wire, only a SHA-256 of challenge+key.
 
 **Cause and checks, in order.**
 1. Hostname: the dataset with dots changed to dashes (`glbx-mdp3`). Custom clients often get this wrong.
@@ -244,3 +246,21 @@ A new account had usage-based access enabled with **no limit**, and a card on fi
 **Reply.** It's transient. Retry with exponential backoff. If it keeps happening, send the UTC times and the request parameters (the API returns no request ID).
 
 **Escalate?** If a customer sees it repeatedly within minutes, or on several endpoints. Check the status page first.
+
+## 19. Your daily bar doesn't match CME
+
+**Evidence.** ESZ6, 35 trade dates (5 Oct to 20 Nov 2026):
+
+- `ohlcv-1d` equals 1-minute bars grouped by **UTC date** on 42 of 42 days.
+- Compared with CME sessions (17:00 to 16:00 Chicago), the open differs on 34 of 35 days (median 26 ticks, max 242). The close differs on 28.
+- The session starts at 22:00 UTC before 1 Nov and 23:00 UTC after it.
+
+Full study: [`findings/daily-bars-vs-sessions.md`](findings/daily-bars-vs-sessions.md).
+
+**Reply.** Daily bars are UTC days. For exchange-style bars, rebuild from `ohlcv-1m` with `sessions.session_bars(df, "GLBX")`, or request one trade date with `sessions.trade_window("GLBX", date)`. Osaka and HKEX futures need the same treatment ([`APAC.md`](APAC.md)).
+
+## 20. Settlement prices are one day off
+
+**Evidence.** In GLBX `statistics`, the settlement (`stat_type == 3`) for trade date D has `ts_ref = D 00:00 UTC`. In Chicago time that reads as 19:00 on D-1. Converting `ts_ref` the way you'd convert every other CME timestamp shifts all 35 settlements by a day. Each settlement also arrives more than once: around 15:00 CT with `stat_flags = 2`, then again around 18:00 CT with `stat_flags = 3`.
+
+**Reply.** Take the UTC date of `ts_ref` as the trade date, and keep the latest record for each date. Settlement is not the 16:00 close; on 33 of 35 days they differed (median 24 ticks).

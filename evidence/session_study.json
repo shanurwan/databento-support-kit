@@ -1,0 +1,19 @@
+{
+ "cost_usd": 0.1793,
+ "minutes": 48300,
+ "ohlcv_1d_equals_utc_day_rebuild": "42/42",
+ "trade_days": 35,
+ "days_open_differs": 34,
+ "days_close_differs": 28,
+ "days_high_or_low_differs": 16,
+ "median_open_diff_ticks": 26.0,
+ "max_open_diff_ticks": 242.0,
+ "max_close_diff_ticks": 184.0,
+ "median_volume_mismatch_pct": 0.5,
+ "settlement_days": 35,
+ "settle_eq_session_close_days": 2,
+ "median_settle_vs_utc_close_ticks": 40.0,
+ "median_settle_vs_session_close_ticks": 24.0,
+ "session_start_utc_before_dst_end": "2026-10-29 22:00:00+00:00",
+ "session_start_utc_after_dst_end": "2026-11-05 23:00:00+00:00"
+}

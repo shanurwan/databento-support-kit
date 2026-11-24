@@ -2,8 +2,11 @@
 
 First-line support tooling for the [Databento](https://databento.com) API, built and tested against the real API.
 
-- **[`PLAYBOOK.md`](PLAYBOOK.md)**: 18 common tickets (auth, live gateway, date ranges, symbology, data shape, billing). Each has the exact response the API returned, the cause, a reply to send, and when to escalate.
+- **[`APAC.md`](APAC.md)**: a launch kit for Databento's upcoming JPX and HKEX datasets. It covers each trading day in local time and UTC, 15 tickets Asian-hours customers are likely to file, and a checklist for the first hour on real data.
+- **[`sessions.py`](sessions.py)**: exchange trade dates for CME, TSE, OSE, TOCOM, HKEX securities and HKEX futures. It handles night sessions that count toward the next day, holiday trading, half-days, lunch breaks and dated schedule changes. It rebuilds session daily bars from `ohlcv-1m` and gives the UTC window for one trade date.
+- **[`PLAYBOOK.md`](PLAYBOOK.md)**: 20 common tickets (auth, live gateway, date ranges, symbology, data shape, billing). Each has the exact response the API returned, the cause, a reply to send, and when to escalate.
 - **[`dbdoctor.py`](dbdoctor.py)**: runs those checks on one request and prints a paste-ready escalation summary. It uses only free endpoints (metadata, symbology, the live handshake), never downloads data, never starts a live session, and never prints the API key.
+- **[`findings/daily-bars-vs-sessions.md`](findings/daily-bars-vs-sessions.md)**: measured on CME, `ohlcv-1d` (UTC days) differs from the session open on 34 of 35 trade dates. Also covers how to read settlement `ts_ref` correctly.
 - **[`findings/symbology-overlap.md`](findings/symbology-overlap.md)**: a client bug found while building the playbook. `to_df()` labels rows NaN when two requested symbols share an instrument (0.68.1+), with an offline repro and a tested fix.
 
 ## dbdoctor
@@ -48,13 +51,25 @@ python dbdoctor.py --dataset GLBX.MDP3 --symbols ES.c.0,ES.v.0 --stype-in contin
 
 Exit code is 1 if any check fails, so it can run in CI or in a support macro. `--json` gives machine-readable output.
 
+## sessions
+
+```python
+import datetime as dt, databento as db, sessions
+
+start, end = sessions.trade_window("XOSE", dt.date(2026, 12, 1))
+# (Timestamp('2026-11-30 07:45:00+0000'), Timestamp('2026-12-01 06:50:00+0000'))
+
+print(sessions.session_table("XHKF", dt.date(2026, 12, 1)))
+daily = sessions.session_bars(store.to_df(), "GLBX")   # store: ohlcv-1m DBNStore
+```
+
 ## Tests
 
 ```bash
-pip install pytest && pytest -q test_dbdoctor.py
+pip install pytest && pytest -q
 ```
 
-The offline tests use API responses captured on 2026-11-23.
+There are 23 offline tests. Some use API responses captured on 2026-11-23. Others pin session rules to specific dates, for example Friday-night OSE trades counting toward Monday, and no HKEX after-hours session following a half-day.
 
 ## Docker
 
